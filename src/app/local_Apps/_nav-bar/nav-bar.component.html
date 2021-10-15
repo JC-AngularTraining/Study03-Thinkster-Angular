@@ -1,0 +1,44 @@
+<mat-toolbar id="navBar-Main">
+  <nav id="navBar-Left">
+    <a routerLink="/home" routerLinkActive="active">
+      {{ title }}
+    </a>
+  </nav>
+  <nav id="navBar-Right">
+    <!-- Menu alter in relation to screen size -->
+
+    <!-- Standard Menu --><!-- prettier-ignore -->
+    <div class="standardMenu">      
+      <a routerLink="/home" routerLinkActive="active" title="Home">Home</a>
+      <a routerLink="/exercise1" routerLinkActive="active" title="Exercise1">Exercise 1</a>
+      <a routerLink="/exercise2" routerLinkActive="active" title="Exercise2">Exercise 2</a>
+      <a routerLink="/exercise3" routerLinkActive="active" title="Exercise3">Exercise 3</a>
+      <a routerLink="/exercise4" routerLinkActive="active" title="Exercise4">Exercise 4</a>
+    </div>
+
+    <!-- Collapsed Menu -->
+    <div class="hamburgerMenu">
+      <button mat-button [matMenuTriggerFor]="menu">
+        <fa-icon [icon]="faBars" id="barsIcon"></fa-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/home" title="Home">Home</button>
+        <button mat-menu-item routerLink="/exercise1" title="Exercise1">
+          Exercise 1
+        </button>
+        <button mat-menu-item routerLink="/exercise1" title="Exercise2">
+          Exercise 2
+        </button>
+        <button mat-menu-item routerLink="/exercise1" title="Exercise3">
+          Exercise 3
+        </button>
+        <button mat-menu-item routerLink="/exercise1" title="Exercise4">
+          Exercise 4
+        </button>
+      </mat-menu>
+    </div>
+  </nav>
+</mat-toolbar>
+<div>
+  <router-outlet></router-outlet>
+</div>

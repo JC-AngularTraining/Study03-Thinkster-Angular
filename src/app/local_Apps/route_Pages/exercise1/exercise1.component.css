@@ -1,0 +1,17 @@
+.Movie-Cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Movie-Cards > div {
+  margin: 25px;
+}
+
+.Movie-Cards > div > button {
+  margin: 10px;
+}
+
+.Movie-Cards > div > img {
+  width: 10vw;
+  height: 18vw;
+}

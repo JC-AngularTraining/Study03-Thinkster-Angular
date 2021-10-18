@@ -1,21 +1,63 @@
 <main class="routerArea">
   <h1>{{ pageTitle }}</h1>
+
+  {{ selectedIndex }}
   <div class="Movie-Cards">
     <div>
-      <img src="" alt="" />
-      <button></button>
+      <h3 [hidden]="!isSelected(0)">Chosen!</h3>
+      <img
+        src="https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX128_CR0,3,128,176_AL_.jpg"
+        alt="The Shawshank Redemption"
+      />
+      <br />
+      <button
+        [disabled]="anySelected() && !isSelected(0)"
+        (click)="onVoteClick(0)"
+      >
+        {{ getButtonText(0) }}
+      </button>
     </div>
     <div>
-      <img src="" alt="" />
-      <button></button>
+      <h3 [hidden]="!isSelected(1)">Chosen!</h3>
+      <img
+        src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX128_CR0,1,128,176_AL_.jpg"
+        alt="The Godfather"
+      />
+      <br />
+      <button
+        [disabled]="anySelected() && !isSelected(1)"
+        (click)="onVoteClick(1)"
+      >
+        {{ getButtonText(1) }}
+      </button>
     </div>
     <div>
-      <img src="" alt="" />
-      <button></button>
+      <h3 [hidden]="!isSelected(2)">Chosen!</h3>
+      <img
+        src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_UX128_CR0,3,128,176_AL_.jpg"
+        alt="The Dark Knight"
+      />
+      <br />
+      <button
+        [disabled]="anySelected() && !isSelected(2)"
+        (click)="onVoteClick(2)"
+      >
+        {{ getButtonText(2) }}
+      </button>
     </div>
     <div>
-      <img src="" alt="" />
-      <button></button>
+      <h3 [hidden]="!isSelected(3)">Chosen!</h3>
+      <img
+        src="https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX128_CR0,3,128,176_AL_.jpg"
+        alt="Pulp Fiction"
+      />
+      <br />
+      <button
+        [disabled]="anySelected() && !isSelected(3)"
+        (click)="onVoteClick(3)"
+      >
+        {{ getButtonText(3) }}
+      </button>
     </div>
   </div>
 </main>

@@ -1,0 +1,27 @@
+<h1>Flopbuster</h1>
+
+<div class="container d-flex m-1 mb-4">
+  <div class="p-2 col-6">
+    We have all the best flops in the business!
+    <br />
+    Choose a flop to rent
+  </div>
+
+  <div class="card p-2 col-6">
+    <!--Exercise:
+      Make this a component
+      send in the data for # of movies rented, and list of titles
+      BONUS: hook up the rent buttons below
+     -->
+    <div class="card-body">
+      <h6>Rental List</h6>
+
+      <p>
+        Rented 4 movies: Cats, Howard the Duck, Jack and Jill, Batman and Robin
+      </p>
+    </div>
+  </div>
+</div>
+
+<app-child-rent [movieTitle]="wingCommander"></app-child-rent>
+<app-child-rent [movieTitle]="theRoom"></app-child-rent>

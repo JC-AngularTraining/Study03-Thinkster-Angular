@@ -1,9 +1,10 @@
-<div style="display: flex; justify-content: space-around">
-  <div class="card bg-dark text-light" style="width: 10rem">
-    <div class="card-body">
-      <h6>{{ movieTitle.title }}</h6>
-
-      <button class="btn btn-primary">Rent</button>
-    </div>
+<div class="card bg-dark text-light ms-4">
+  <div class="card-body ms-1">
+    <h3>{{ movie.title }}</h3>
+    <img [src]="movie.image" [alt]="movie.title" />
+    <br />
+    <button (click)="onRentalClick(movie)" class="btn btn-primary m-3">
+      Rent
+    </button>
   </div>
 </div>

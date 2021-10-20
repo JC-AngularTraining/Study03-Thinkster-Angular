@@ -1,6 +1,6 @@
 import { ThrowStmt } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
-import { ServExercise1Service } from 'src/app/_services/serv-exercise1.service';
+import { ServExercise1Service } from 'src/app/_services/exercise1.service';
 
 @Component({
   selector: 'app-exercise1',

@@ -1,3 +1,31 @@
 <main class="routerArea">
-  <h1>Exercise 2</h1>
+  <h1>Flopchooser</h1>
+
+  <main>
+    <p>Which movie has a lower IMDB rating?</p>
+    <p [hidden]="!hasChosen">
+      <span [hidden]="!isCorrect" style="font-size: 2rem">Correct!</span>
+      <span [hidden]="isCorrect" style="color: red; font-size: 2rem"
+        >Incorrect!</span
+      >
+    </p>
+    <button
+      [hidden]="!hasChosen"
+      class="btn btn-primary"
+      (click)="onPlayAgainClick()"
+    >
+      Play Again
+    </button>
+  </main>
+
+  <section>
+    <app-movie-selector
+      (select)="onFirstSelected()"
+      [movie]="flops.first"
+    ></app-movie-selector>
+    <app-movie-selector
+      (select)="onSecondSelected()"
+      [movie]="flops.second"
+    ></app-movie-selector>
+  </section>
 </main>

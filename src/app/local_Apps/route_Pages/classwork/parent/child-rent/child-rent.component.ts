@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-child-rent',
@@ -7,9 +7,17 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ChildRentComponent implements OnInit {
   @Input()
-  movieTitle: any;
+  movie: any;
+
+  @Output()
+  rentMovie = new EventEmitter();
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  onRentalClick(movie: any) {
+    // semd signal or event to parent
+    this.rentMovie.emit(movie);
+  }
 }

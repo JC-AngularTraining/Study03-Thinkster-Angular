@@ -1,1 +1,8 @@
-<p>child-rentlist works!</p>
+<div class="card-body">
+  <h3>Rental List</h3>
+
+  <p>Rented {{ rentalList.count }} movies: {{ rentalList.titles }}</p>
+  <button (click)="onClearClick()" type="button" class="btn btn-danger m-4">
+    Clear Rentals
+  </button>
+</div>

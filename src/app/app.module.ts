@@ -20,8 +20,9 @@ import { MovieDisplayComponent } from './local_Apps/route_Pages/classwork/movie-
 import { FlopVoteComponent } from './local_Apps/route_Pages/classwork/flop-vote/flop-vote.component';
 import { RentalCartComponent } from './local_Apps/route_Pages/classwork/rental-cart/rental-cart.component';
 import { ParentComponent } from './local_Apps/route_Pages/classwork/parent/parent.component';
-import { ChildRentComponent } from './local_Apps/route_Pages/classwork/parent/child-rent/child-rent.component';
 import { ChildRentlistComponent } from './local_Apps/route_Pages/classwork/parent/child-rentlist/child-rentlist.component';
+import { ChildRentComponent } from './local_Apps/route_Pages/classwork/parent/child-rent/child-rent.component';
+import { MovieSelectorComponent } from './local_Apps/route_Pages/exercise2/movie-selector/movie-selector.component';
 
 @NgModule({
   declarations: [
@@ -38,8 +39,9 @@ import { ChildRentlistComponent } from './local_Apps/route_Pages/classwork/paren
     FlopVoteComponent,
     RentalCartComponent,
     ParentComponent,
-    ChildRentComponent,
     ChildRentlistComponent,
+    ChildRentComponent,
+    MovieSelectorComponent,
   ],
   imports: [
     BrowserModule,

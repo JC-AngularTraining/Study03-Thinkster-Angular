@@ -1,0 +1,10 @@
+.movieDiv {
+  cursor: pointer;
+}
+
+img {
+  width: 15rem;
+  height: auto;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}

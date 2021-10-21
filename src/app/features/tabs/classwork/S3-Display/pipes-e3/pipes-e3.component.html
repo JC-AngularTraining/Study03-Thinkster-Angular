@@ -1,0 +1,15 @@
+<section>
+  <div
+    *ngFor="let actor of actors; index as i"
+    class="bg-dark text-light p-3 rounded mb-2"
+  >
+    <div>{{ i + 1 + ". " + actor.name | titlecase }}</div>
+    <div>Favorite Quote: {{ actor.quote | lowercase }}</div>
+    <div>
+      Gross Earnings:
+      {{ actor.gross_earnings | currency: "GBP":"symbol":"1.0-0" }}
+    </div>
+    <div># of appearances: {{ actor.credits | number: "1.0-0" }}</div>
+    <div>Date of Birth: {{ actor.born | date: "longDate" }}</div>
+  </div>
+</section>

@@ -1,0 +1,24 @@
+<div class="card-body text-dark">
+  <h6>
+    Rentals
+    <span class="badge badge-secondary"> {{ rentalList.length }}</span>
+  </h6>
+  <div *ngFor="let rental of rentalList" style="font-size: 12px">
+    {{ rental.title }}
+    <span [ngSwitch]="rental.title">
+      <i *ngSwitchCase="'Wing Commander'" class="material-icons">flight</i>
+      <i *ngSwitchCase="'Spider-Man 3'" class="material-icons">pest_control</i>
+      <i *ngSwitchCase="'Cats'" class="material-icons">pets</i>
+    </span>
+  </div>
+
+  <span *ngIf="rentalList.length === 0">no rentals</span>
+
+  <button
+    *ngIf="rentalList.length > 0"
+    class="btn btn-primary btn-sm"
+    (click)="onClearClick()"
+  >
+    Clear
+  </button>
+</div>

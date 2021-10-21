@@ -1,0 +1,52 @@
+<section>
+  <h4>Flopbox</h4>
+
+  <div class="mb-3">
+    <b>My Favorite Actors</b>
+
+    <ul class="list-unstyled">
+      <li
+        *ngFor="
+          let fav of favoriteActors;
+          even as e;
+          odd as o;
+          last as l;
+          index as i
+        "
+        [class.text-success]="e"
+        [class.text-info]="o"
+        [class.text-danger]="l"
+      >
+        {{ i + 1 }}. {{ fav.name }}
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <b>All Actors</b>
+    <my-actor-display
+      [actor]="actors[0]"
+      (click)="actorSelected(actors[0])"
+    ></my-actor-display>
+    <my-actor-display
+      [actor]="actors[1]"
+      (click)="actorSelected(actors[1])"
+    ></my-actor-display>
+    <my-actor-display
+      [actor]="actors[2]"
+      (click)="actorSelected(actors[2])"
+    ></my-actor-display>
+    <my-actor-display
+      [actor]="actors[3]"
+      (click)="actorSelected(actors[3])"
+    ></my-actor-display>
+    <my-actor-display
+      [actor]="actors[4]"
+      (click)="actorSelected(actors[4])"
+    ></my-actor-display>
+    <my-actor-display
+      [actor]="actors[5]"
+      (click)="actorSelected(actors[5])"
+    ></my-actor-display>
+  </div>
+</section>

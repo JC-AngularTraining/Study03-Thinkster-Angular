@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { FLOP_DATA } from 'src/assets/Data/FLOP_DATA';
+import { FLOP_DATA } from 'src/assets/data/FLOP_DATA';
 
 @Injectable({
   providedIn: 'root',

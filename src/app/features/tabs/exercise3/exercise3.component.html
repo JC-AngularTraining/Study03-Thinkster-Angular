@@ -1,0 +1,27 @@
+<main class="routerArea">
+  <h4>Flopbuster Watch List</h4>
+
+  <div>
+    <my-watch-list-item
+      *ngFor="
+        let item of watchList | slice: 0:maxItemsShown;
+        index as i;
+        last as l;
+        first as f
+      "
+      [item]="item"
+      (up)="moveItemUp(i)"
+      (down)="moveItemDown(i)"
+      [first]="f"
+      [last]="l"
+    ></my-watch-list-item>
+  </div>
+
+  <button
+    (click)="showAll()"
+    *ngIf="maxItemsShown < watchList.length"
+    class="btn btn-info"
+  >
+    Show All....
+  </button>
+</main>

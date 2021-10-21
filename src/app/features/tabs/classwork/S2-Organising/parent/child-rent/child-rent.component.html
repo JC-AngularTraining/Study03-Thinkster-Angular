@@ -1,0 +1,8 @@
+<div class="card bg-dark text-light ms-4">
+  <div class="card-body ms-1">
+    <h3>{{ movie.title }}</h3>
+    <img [src]="movie.image" [alt]="movie.title" />
+    <br />
+    <button (click)="onRentalClick(movie)" [class]="btnClasses()">Rent</button>
+  </div>
+</div>

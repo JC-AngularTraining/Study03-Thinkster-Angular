@@ -30,6 +30,9 @@ import { RentalListComponent } from './features/tabs/classwork/S3-Display/direct
 import { MovieTileComponent } from './features/tabs/classwork/S3-Display/directive-e2/movie-tile/movie-tile.component';
 import { PipesE3Component } from './features/tabs/classwork/S3-Display/pipes-e3/pipes-e3.component';
 import { WatchListItemComponent } from './features/tabs/exercise3/watch-list-item/watch-list-item.component';
+import { S4Exercise1Component } from './features/tabs/classwork/S4-Server/s4-exercise1/s4-exercise1.component';
+import { S4Exercise2Component } from './features/tabs/classwork/S4-Server/s4-exercise2/s4-exercise2.component';
+import { S4WatchListItemsComponent } from './features/tabs/classwork/S4-Server/s4-exercise2/s4-watch-list-items/s4-watch-list-items.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +59,9 @@ import { WatchListItemComponent } from './features/tabs/exercise3/watch-list-ite
     MovieTileComponent,
     PipesE3Component,
     WatchListItemComponent,
+    S4Exercise1Component,
+    S4Exercise2Component,
+    S4WatchListItemsComponent,
   ],
   imports: [
     BrowserModule,

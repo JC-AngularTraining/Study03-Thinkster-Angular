@@ -1,0 +1,40 @@
+<main class="routerArea">
+  <h4>Flopbox</h4>
+  <div class="header-panel d-flex m-1 mb-4 p-2">
+    <div class="p-2 col-6">
+      We have all the best flops in the business!
+      <br />
+      Choose a flop to rent
+    </div>
+
+    <div *ngIf="!loggedIn" class="card p-2 col-6">
+      <b>Login</b>
+      <button (click)="onLogin()" class="btn btn-success">Login</button>
+    </div>
+  </div>
+
+  <div *ngIf="loggedIn">
+    <!-- <b>Actors</b>
+  <div *ngFor="let actor of actors" class="p-2 text-light bg-dark rounded mb-2">
+    {{ actor.name }}
+  </div> -->
+
+    <!-- Exercise 5 Answer -->
+    <b>Actors</b>
+    <div
+      *ngFor="let actor of actors$ | async"
+      class="p-2 text-light bg-dark rounded mb-2"
+    >
+      {{ actor.name }}
+    </div>
+
+    <b>Movies to Rent</b>
+    <div class="movie-panels" style="flex-wrap: wrap">
+      <my-s4-movie-tile
+        *ngFor="let flop of flops"
+        class="mb-2"
+        [movie]="flop"
+      ></my-s4-movie-tile>
+    </div>
+  </div>
+</main>

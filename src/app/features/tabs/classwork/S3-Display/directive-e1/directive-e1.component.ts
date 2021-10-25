@@ -3,11 +3,11 @@ import { FLOP_DATA, ACTORS } from '../../../../../../assets/data/FLOP_DATA';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'my-directive-e1',
+  selector: 'my-s3-directive-e1',
   templateUrl: './directive-e1.component.html',
   styleUrls: ['./directive-e1.component.css'],
 })
-export class DirectiveComponent implements OnInit {
+export class DirectiveS3Component implements OnInit {
   flopData: any;
   actors: any;
   favoriteActors: any[] = [];

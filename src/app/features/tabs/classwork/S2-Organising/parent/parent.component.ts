@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-parent',
+  selector: 'app-s2-parent',
   templateUrl: './parent.component.html',
   styleUrls: ['./parent.component.css'],
 })
-export class ParentComponent implements OnInit {
+export class ParentS2Component implements OnInit {
   rentalList = {
     count: 2,
     titles: 'Cats and Batman',

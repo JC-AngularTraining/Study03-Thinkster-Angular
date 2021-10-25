@@ -8,7 +8,7 @@ import { S4AuthService } from 'src/app/_services/s4-auth.service';
   templateUrl: './s4-exercise3.component.html',
   styleUrls: ['./s4-exercise3.component.css'],
 })
-export class S4Exercise3Component implements OnInit {
+export class Exercise3S4Component implements OnInit {
   flops!: Movie[];
   actors: any;
   actors$: any;

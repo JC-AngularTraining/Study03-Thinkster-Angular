@@ -1,11 +1,11 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-child-rent',
+  selector: 'app-s2-child-rent',
   templateUrl: './child-rent.component.html',
   styleUrls: ['./child-rent.component.css'],
 })
-export class ChildRentComponent implements OnInit {
+export class ChildRentS2Component implements OnInit {
   @Input()
   movie: any;
 

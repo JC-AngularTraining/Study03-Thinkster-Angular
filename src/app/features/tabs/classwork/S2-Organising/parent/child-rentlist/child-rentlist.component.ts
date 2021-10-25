@@ -1,11 +1,11 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-child-rentlist',
+  selector: 'app-s2-child-rentlist',
   templateUrl: './child-rentlist.component.html',
   styleUrls: ['./child-rentlist.component.css'],
 })
-export class ChildRentlistComponent implements OnInit {
+export class ChildRentlistS2Component implements OnInit {
   @Input()
   rentalList: any;
 

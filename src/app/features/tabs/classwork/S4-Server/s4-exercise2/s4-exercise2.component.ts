@@ -6,7 +6,7 @@ import { S4ClassworkService } from '../../../../../_services/s4-classwork.servic
   templateUrl: './s4-exercise2.component.html',
   styleUrls: ['./s4-exercise2.component.css'],
 })
-export class S4Exercise2Component implements OnInit {
+export class Exercise2S4Component implements OnInit {
   watchList: any[] = [];
   maxItemsShown = 4;
 

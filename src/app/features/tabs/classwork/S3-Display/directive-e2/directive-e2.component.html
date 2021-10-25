@@ -8,17 +8,17 @@
   </div>
 
   <div class="card p-2 col-6">
-    <my-rental-list
+    <my-s3-rental-list
       [rentalList]="rentalList"
       (clearRentalList)="onClearRentalList()"
-    ></my-rental-list>
+    ></my-s3-rental-list>
   </div>
 </div>
 
 <div class="movie-panels">
-  <my-movie-tile
+  <my-s3-movie-tile
     *ngFor="let flop of flopData"
     [movie]="flop"
     (rentClick)="onRentMovie(flop)"
-  ></my-movie-tile>
+  ></my-s3-movie-tile>
 </div>

@@ -8,7 +8,7 @@ import { pluck } from 'rxjs/operators';
   templateUrl: './s4-exercise1.component.html',
   styleUrls: ['./s4-exercise1.component.css'],
 })
-export class S4Exercise1Component implements OnInit {
+export class Exercise1S4Component implements OnInit {
   name: string = 'Justin';
   flops: any;
   constructor() {}

@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { FLOP_DATA2 } from '../../../../../../assets/data/FLOP_DATA';
 
 @Component({
-  selector: 'my-directive-e2',
+  selector: 'my-s3-directive-e2',
   templateUrl: './directive-e2.component.html',
   styleUrls: ['./directive-e2.component.css'],
 })
-export class DirectiveE2Component implements OnInit {
+export class DirectiveS3E2Component implements OnInit {
   rentalList: any[] = [];
   flopData;
 

@@ -13,20 +13,20 @@
       send in the data for # of movies rented, and list of titles
       BONUS: hook up the rent buttons below
      -->
-    <app-child-rentlist
+    <app-s2-child-rentlist
       (clearRentalList)="onClearList()"
       [rentalList]="rentalList"
-    ></app-child-rentlist>
+    ></app-s2-child-rentlist>
   </div>
 </div>
 
 <div class="d-flex">
-  <app-child-rent
+  <app-s2-child-rent
     (rentMovie)="onRentMovie($event)"
     [movie]="wingCommander"
-  ></app-child-rent>
-  <app-child-rent
+  ></app-s2-child-rent>
+  <app-s2-child-rent
     (rentMovie)="onRentMovie($event)"
     [movie]="catwoman"
-  ></app-child-rent>
+  ></app-s2-child-rent>
 </div>

@@ -1,15 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-movie-display',
+  selector: 'app-s1-movie-display',
   templateUrl: './movie-display.component.html',
-  styleUrls: ['./movie-display.component.css']
+  styleUrls: ['./movie-display.component.css'],
 })
-export class MovieDisplayComponent implements OnInit {
+export class MovieDisplayS1Component implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

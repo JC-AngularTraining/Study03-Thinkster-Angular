@@ -1,11 +1,11 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'my-rental-list',
+  selector: 'my-s3-rental-list',
   templateUrl: './rental-list.component.html',
   styleUrls: ['./rental-list.component.css'],
 })
-export class RentalListComponent implements OnInit {
+export class RentalListS3Component implements OnInit {
   @Input() rentalList: any;
   @Output() clearRentalList = new EventEmitter();
 

@@ -1,4 +1,4 @@
-<div
+<section
   style="display: flex; justify-content: space-between"
   class="text-light p-3 rounded mb-2"
   [class.bg-dark]="!item.onSale"
@@ -12,4 +12,4 @@
     <i (click)="moveUp()" *ngIf="!first" class="material-icons">expand_less</i>
     <i (click)="moveDown()" *ngIf="!last" class="material-icons">expand_more</i>
   </div>
-</div>
+</section>

@@ -2,7 +2,7 @@
   <h4>Flopbuster Watch List</h4>
 
   <div>
-    <my-watch-list-item
+    <my-s4-watch-list-items
       *ngFor="
         let item of watchList | slice: 0:maxItemsShown;
         index as i;
@@ -14,7 +14,7 @@
       [last]="l"
       (up)="moveItemUp(i)"
       (down)="moveItemDown(i)"
-    ></my-watch-list-item>
+    ></my-s4-watch-list-items>
 
     <button
       (click)="showAll()"

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-rental-cart',
+  selector: 'app-s1-rental-cart',
   templateUrl: './rental-cart.component.html',
   styleUrls: ['./rental-cart.component.css'],
 })
-export class RentalCartComponent implements OnInit {
+export class RentalCartS1Component implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}

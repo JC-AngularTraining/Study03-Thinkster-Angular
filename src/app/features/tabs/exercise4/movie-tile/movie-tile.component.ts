@@ -6,7 +6,7 @@ import { Movie } from '../../../../_models/exercise4-movie.model';
   templateUrl: './movie-tile.component.html',
   styleUrls: ['./movie-tile.component.css'],
 })
-export class MovieE4TileComponent {
+export class MovieTileE4Component {
   @Input() movie!: Movie;
   @Output() rent = new EventEmitter();
   selected = false;

@@ -1,11 +1,11 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-movie-selector',
+  selector: 'my-e2-movie-selector',
   templateUrl: './movie-selector.component.html',
   styleUrls: ['./movie-selector.component.css'],
 })
-export class MovieSelectorComponent implements OnInit {
+export class MovieSelectorE2Component implements OnInit {
   @Input()
   movie: any;
 

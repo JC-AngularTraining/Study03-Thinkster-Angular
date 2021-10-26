@@ -42,6 +42,10 @@ import { S4MovieTileComponent } from './features/tabs/classwork/S4-Server/s4-exe
 import { S4RentalListComponent } from './features/tabs/classwork/S4-Server/s4-exercise3/s4-rental-list/s4-rental-list.component';
 import { MovieTileE4Component } from './features/tabs/exercise4/movie-tile/movie-tile.component';
 import { RentalListE4Component } from './features/tabs/exercise4/rental-list/rental-list.component';
+import { TabSelectorComponent } from './features/tabs/classwork/S5-Routing/tab-selector.component';
+import { Tab1Component } from './features/tabs/classwork/S5-Routing/tab1/tab1.component';
+import { Tab2Component } from './features/tabs/classwork/S5-Routing/tab2/tab2.component';
+import { TabDetailsComponent } from './features/tabs/classwork/S5-Routing/tab2/tab-details/tab-details.component';
 
 @NgModule({
   declarations: [
@@ -80,6 +84,10 @@ import { RentalListE4Component } from './features/tabs/exercise4/rental-list/ren
     Exercise8Component,
     MovieTileE4Component,
     RentalListE4Component,
+    TabSelectorComponent,
+    Tab1Component,
+    Tab2Component,
+    TabDetailsComponent,
   ],
   imports: [
     BrowserModule,

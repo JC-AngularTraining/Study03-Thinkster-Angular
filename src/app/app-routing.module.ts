@@ -11,10 +11,32 @@ import { Exercise8Component } from './features/tabs/exercise8/exercise8.componen
 import { Exercise7Component } from './features/tabs/exercise7/exercise7.component';
 import { Exercise6Component } from './features/tabs/exercise6/exercise6.component';
 import { Exercise5Component } from './features/tabs/exercise5/exercise5.component';
+import { Tab1Component } from './features/tabs/classwork/S5-Routing/tab1/tab1.component';
+import { Tab2Component } from './features/tabs/classwork/S5-Routing/tab2/tab2.component';
+import { TabDetailsComponent } from './features/tabs/classwork/S5-Routing/tab2/tab-details/tab-details.component';
 
 const appRoutes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'classwork', redirectTo: 'classwork/tab1', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'classwork', component: ClassworkComponent },
+  {
+    path: 'classwork',
+    component: ClassworkComponent,
+    children: [
+      {
+        path: 'tab1',
+        component: Tab1Component,
+      },
+      {
+        path: 'tab2',
+        component: Tab2Component,
+      },
+      {
+        path: 'tab2/:id',
+        component: TabDetailsComponent,
+      },
+    ],
+  },
   { path: 'exercise1', component: Exercise1Component },
   { path: 'exercise2', component: Exercise2Component },
   { path: 'exercise3', component: Exercise3Component },
@@ -24,7 +46,6 @@ const appRoutes: Routes = [
   { path: 'exercise7', component: Exercise7Component },
   { path: 'exercise8', component: Exercise8Component },
 
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];
 

@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-md-12 col-xs-12">
+    <h2 class="text-center">Angular Fundamentals - Section 5</h2>
+  </div>
+</div>
+
+<ul role="tablist" class="nav nav-tabs justify-content-start m-2">
+  <a
+    role="tab"
+    class="nav-link"
+    routerLink="/classwork/tab1"
+    routerLinkActive="active"
+    title="Tab 1"
+    >Tab 1</a
+  >
+  <!-- this is an alternative way to use the route, this enable dynamic binding i.e. if you want to add an ID -->
+  <a
+    role="tab"
+    class="nav-link"
+    [routerLink]="['/classwork/tab2']"
+    routerLinkActive="active"
+    title="Tab 2"
+    >Tab 2</a
+  >
+</ul>
+<main class="m-2">
+  <router-outlet></router-outlet>
+</main>

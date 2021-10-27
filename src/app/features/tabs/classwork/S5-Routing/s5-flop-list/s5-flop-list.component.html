@@ -1,0 +1,45 @@
+<my-s5-rental-list [rentalList]="rentalList"></my-s5-rental-list>
+
+<a
+  class="starsFilter"
+  routerLink="/classwork/flops"
+  [queryParams]="{ starsMax: 3 }"
+  >3 Stars</a
+>
+<a
+  class="starsFilter"
+  routerLink="/classwork/flops"
+  [queryParams]="{ starsMax: 4 }"
+  >4 Stars</a
+>
+<a
+  class="starsFilter"
+  routerLink="/classwork/flops"
+  [queryParams]="{ starsMax: 5 }"
+  >5 Stars</a
+>
+<div
+  style="
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 15px;
+  "
+>
+  <div *ngFor="let flop of flops" class="card bg-dark text-light mb-3">
+    <a [routerLink]="['/classwork/flops', flop.id]">
+      <div class="card-body">
+        <img [src]="flop.imageUrl" alt="" />
+
+        <div style="display: flex; justify-content: space-between">
+          <button
+            class="btn btn-success btn-sm"
+            (click)="onRentClick($event, flop)"
+          >
+            Rent
+          </button>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>

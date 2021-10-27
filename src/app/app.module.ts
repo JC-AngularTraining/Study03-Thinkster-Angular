@@ -46,6 +46,12 @@ import { TabSelectorComponent } from './features/tabs/classwork/S5-Routing/tab-s
 import { Tab1Component } from './features/tabs/classwork/S5-Routing/tab1/tab1.component';
 import { Tab2Component } from './features/tabs/classwork/S5-Routing/tab2/tab2.component';
 import { TabDetailsComponent } from './features/tabs/classwork/S5-Routing/tab2/tab-details/tab-details.component';
+import { S5FlopDetailsComponent } from './features/tabs/classwork/S5-Routing/s5-flop-details/s5-flop-details.component';
+import { S5FlopListComponent } from './features/tabs/classwork/S5-Routing/s5-flop-list/s5-flop-list.component';
+import { S5RentalListComponent } from './features/tabs/classwork/S5-Routing/s5-rental-list/s5-rental-list.component';
+import { S5TooManyRentalsComponent } from './features/tabs/classwork/S5-Routing/s5-too-many-rentals/s5-too-many-rentals.component';
+import { E5ActorlistComponent } from './features/tabs/exercise5/e5-actorlist/e5-actorlist.component';
+import { E5ActorEditComponent } from './features/tabs/exercise5/e5-actors-edit.component';
 
 @NgModule({
   declarations: [
@@ -88,6 +94,12 @@ import { TabDetailsComponent } from './features/tabs/classwork/S5-Routing/tab2/t
     Tab1Component,
     Tab2Component,
     TabDetailsComponent,
+    S5FlopDetailsComponent,
+    S5FlopListComponent,
+    S5RentalListComponent,
+    S5TooManyRentalsComponent,
+    E5ActorlistComponent,
+    E5ActorEditComponent,
   ],
   imports: [
     BrowserModule,

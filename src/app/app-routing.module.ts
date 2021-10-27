@@ -14,6 +14,11 @@ import { Exercise5Component } from './features/tabs/exercise5/exercise5.componen
 import { Tab1Component } from './features/tabs/classwork/S5-Routing/tab1/tab1.component';
 import { Tab2Component } from './features/tabs/classwork/S5-Routing/tab2/tab2.component';
 import { TabDetailsComponent } from './features/tabs/classwork/S5-Routing/tab2/tab-details/tab-details.component';
+import { S5FlopListComponent } from './features/tabs/classwork/S5-Routing/s5-flop-list/s5-flop-list.component';
+import { S5FlopDetailsComponent } from './features/tabs/classwork/S5-Routing/s5-flop-details/s5-flop-details.component';
+import { S5TooManyRentalsComponent } from './features/tabs/classwork/S5-Routing/s5-too-many-rentals/s5-too-many-rentals.component';
+import { E5ActorlistComponent } from './features/tabs/exercise5/e5-actorlist/e5-actorlist.component';
+import { E5ActorEditComponent } from './features/tabs/exercise5/e5-actors-edit.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -35,13 +40,38 @@ const appRoutes: Routes = [
         path: 'tab2/:id',
         component: TabDetailsComponent,
       },
+      {
+        path: 'flops',
+        component: S5FlopListComponent,
+      },
+      {
+        path: 'flops/:id',
+        component: S5FlopDetailsComponent,
+      },
+      {
+        path: 'toomany',
+        component: S5TooManyRentalsComponent,
+      },
     ],
   },
   { path: 'exercise1', component: Exercise1Component },
   { path: 'exercise2', component: Exercise2Component },
   { path: 'exercise3', component: Exercise3Component },
   { path: 'exercise4', component: Exercise4Component },
-  { path: 'exercise5', component: Exercise5Component },
+  {
+    path: 'exercise5',
+    component: Exercise5Component,
+    children: [
+      {
+        path: 'actors',
+        component: E5ActorlistComponent,
+      },
+      {
+        path: 'actors/:id/edit',
+        component: E5ActorEditComponent,
+      },
+    ],
+  },
   { path: 'exercise6', component: Exercise6Component },
   { path: 'exercise7', component: Exercise7Component },
   { path: 'exercise8', component: Exercise8Component },

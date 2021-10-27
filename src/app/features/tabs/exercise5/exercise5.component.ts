@@ -7,6 +7,8 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./exercise5.component.css'],
 })
 export class Exercise5Component implements OnInit {
+  view = 'actors';
+
   constructor(private htmlTemplateHeadTitle: Title) {
     this.htmlTemplateHeadTitle.setTitle('Exercise 5');
   }

@@ -9,7 +9,6 @@ import { Exercise3Component } from './features/tabs/exercise3/exercise3.componen
 import { Exercise4Component } from './features/tabs/exercise4/exercise4.component';
 import { Exercise8Component } from './features/tabs/exercise8/exercise8.component';
 import { Exercise7Component } from './features/tabs/exercise7/exercise7.component';
-import { Exercise6Component } from './features/tabs/exercise6/exercise6.component';
 import { Exercise5Component } from './features/tabs/exercise5/exercise5.component';
 import { Tab1Component } from './features/tabs/classwork/S5-Routing/tab1/tab1.component';
 import { Tab2Component } from './features/tabs/classwork/S5-Routing/tab2/tab2.component';
@@ -72,7 +71,13 @@ const appRoutes: Routes = [
       },
     ],
   },
-  { path: 'exercise6', component: Exercise6Component },
+  {
+    path: 'exercise6',
+    loadChildren: () =>
+      import('./features/tabs/exercise6/exercise6.module').then(
+        (m) => m.Exercise6Module
+      ),
+  },
   { path: 'exercise7', component: Exercise7Component },
   { path: 'exercise8', component: Exercise8Component },
 

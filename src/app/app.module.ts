@@ -15,7 +15,6 @@ import { Exercise2Component } from './features/tabs/exercise2/exercise2.componen
 import { Exercise3Component } from './features/tabs/exercise3/exercise3.component';
 import { Exercise4Component } from './features/tabs/exercise4/exercise4.component';
 import { Exercise5Component } from './features/tabs/exercise5/exercise5.component';
-import { Exercise6Component } from './features/tabs/exercise6/exercise6.component';
 import { Exercise7Component } from './features/tabs/exercise7/exercise7.component';
 import { Exercise8Component } from './features/tabs/exercise8/exercise8.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -52,6 +51,8 @@ import { S5RentalListComponent } from './features/tabs/classwork/S5-Routing/s5-r
 import { S5TooManyRentalsComponent } from './features/tabs/classwork/S5-Routing/s5-too-many-rentals/s5-too-many-rentals.component';
 import { E5ActorlistComponent } from './features/tabs/exercise5/e5-actorlist/e5-actorlist.component';
 import { E5ActorEditComponent } from './features/tabs/exercise5/e5-actors-edit.component';
+import { SecurityModule } from './features/tabs/classwork/S6-Modules/security/security.module';
+import { Exercise6Module } from './features/tabs/exercise6/exercise6.module';
 
 @NgModule({
   declarations: [
@@ -85,7 +86,6 @@ import { E5ActorEditComponent } from './features/tabs/exercise5/e5-actors-edit.c
     S4MovieTileComponent,
     S4RentalListComponent,
     Exercise5Component,
-    Exercise6Component,
     Exercise7Component,
     Exercise8Component,
     MovieTileE4Component,
@@ -108,6 +108,8 @@ import { E5ActorEditComponent } from './features/tabs/exercise5/e5-actors-edit.c
     UtilsModule,
     FontAwesomeModule,
     HttpClientModule,
+    SecurityModule,
+    Exercise6Module,
   ],
   providers: [],
   bootstrap: [AppComponent],

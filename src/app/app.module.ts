@@ -53,6 +53,10 @@ import { E5ActorlistComponent } from './features/tabs/exercise5/e5-actorlist/e5-
 import { E5ActorEditComponent } from './features/tabs/exercise5/e5-actors-edit.component';
 import { SecurityModule } from './features/tabs/classwork/S6-Modules/security/security.module';
 import { Exercise6Module } from './features/tabs/exercise6/exercise6.module';
+import { S7FormsComponent } from './features/tabs/classwork/S7-Forms/s7-forms.component';
+import { S8ConfigurationComponent } from './features/tabs/classwork/S8-Configuration/s8-configuration.component';
+import { S7FlopSuggestionComponent } from './features/tabs/classwork/S7-Forms/s7-flop-suggestion/s7-flop-suggestion.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -100,6 +104,9 @@ import { Exercise6Module } from './features/tabs/exercise6/exercise6.module';
     S5TooManyRentalsComponent,
     E5ActorlistComponent,
     E5ActorEditComponent,
+    S7FormsComponent,
+    S8ConfigurationComponent,
+    S7FlopSuggestionComponent,
   ],
   imports: [
     BrowserModule,
@@ -110,6 +117,7 @@ import { Exercise6Module } from './features/tabs/exercise6/exercise6.module';
     HttpClientModule,
     SecurityModule,
     Exercise6Module,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

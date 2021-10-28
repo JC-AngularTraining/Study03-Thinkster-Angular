@@ -21,7 +21,7 @@ import { E5ActorEditComponent } from './features/tabs/exercise5/e5-actors-edit.c
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'classwork', redirectTo: 'classwork/tab1', pathMatch: 'full' },
+  // { path: 'classwork', redirectTo: 'classwork/tab1', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   {
     path: 'classwork',

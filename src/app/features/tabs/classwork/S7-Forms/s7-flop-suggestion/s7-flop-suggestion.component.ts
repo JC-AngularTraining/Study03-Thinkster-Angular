@@ -14,6 +14,7 @@ export class S7FlopSuggestionComponent implements OnInit {
   ngOnInit(): void {}
 
   addSuggestion(suggestion: any) {
+    console.log(suggestion);
     this.suggestions.push(suggestion);
   }
 }

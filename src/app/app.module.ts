@@ -57,6 +57,7 @@ import { S7FormsComponent } from './features/tabs/classwork/S7-Forms/s7-forms.co
 import { S8ConfigurationComponent } from './features/tabs/classwork/S8-Configuration/s8-configuration.component';
 import { S7FlopSuggestionComponent } from './features/tabs/classwork/S7-Forms/s7-flop-suggestion/s7-flop-suggestion.component';
 import { FormsModule } from '@angular/forms';
+import { S7FlopSuggestion2Component } from './features/tabs/classwork/S7-Forms/s7-flop-suggestion2/s7-flop-suggestion2.component';
 
 @NgModule({
   declarations: [
@@ -107,6 +108,7 @@ import { FormsModule } from '@angular/forms';
     S7FormsComponent,
     S8ConfigurationComponent,
     S7FlopSuggestionComponent,
+    S7FlopSuggestion2Component,
   ],
   imports: [
     BrowserModule,

@@ -58,6 +58,8 @@ import { S8ConfigurationComponent } from './features/tabs/classwork/S8-Configura
 import { S7FlopSuggestionComponent } from './features/tabs/classwork/S7-Forms/s7-flop-suggestion/s7-flop-suggestion.component';
 import { FormsModule } from '@angular/forms';
 import { S7FlopSuggestion2Component } from './features/tabs/classwork/S7-Forms/s7-flop-suggestion2/s7-flop-suggestion2.component';
+import { RentalListS8Component } from './features/tabs/classwork/S8-Configuration/s8-rental-list/s8-rental-list.component';
+import { MovieTileS8Component } from './features/tabs/classwork/S8-Configuration/s8-movie-tile/s8-movie-tile.component';
 
 @NgModule({
   declarations: [
@@ -109,6 +111,8 @@ import { S7FlopSuggestion2Component } from './features/tabs/classwork/S7-Forms/s
     S8ConfigurationComponent,
     S7FlopSuggestionComponent,
     S7FlopSuggestion2Component,
+    RentalListS8Component,
+    MovieTileS8Component,
   ],
   imports: [
     BrowserModule,
